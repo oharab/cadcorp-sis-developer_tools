@@ -27,6 +27,8 @@ class DeveloperTools(gislink.Program):
         self.log.debug(__name__)
 
         try:
+            self.application.ribbon_group.text=app_title
+            
             # Create the Button Object and set a few attributes
             self.btn = gislink.RibbonButton(text="Toggle Program Window")
             self.btn.always_large_image = False
